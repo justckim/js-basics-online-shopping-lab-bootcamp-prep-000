@@ -73,6 +73,7 @@ function removeFromCart(item) {
   if (itemIsInCart === false) {
     return "That item is not in your cart."
   }
+  cart = myCart 
   return myCart
 }
 
