@@ -65,6 +65,7 @@ function removeFromCart(item) {
     if (myCart[i].itemName === item) {
       
     }
+    
   }
 }
 
