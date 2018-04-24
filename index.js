@@ -60,13 +60,20 @@ function total() {
 
 function removeFromCart(item) {
   var myCart = getCart()
+  var itemIsInCart = false
   
   for (var i = 0; i < myCart.length; i++) {
+    
     if (myCart[i].itemName === item) {
       myCart = [...myCart.slice(0, i)...myCart.slice(i+1, myCart.length)]
+      itemIsInCart = true 
     }
-    
   }
+  
+  if (itemIsInCart === false) {
+    return "That item is not in your cart."
+  }
+  return myCart
 }
 
 function placeOrder(cardNumber) {
