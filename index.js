@@ -74,7 +74,7 @@ function removeFromCart(item) {
     return "That item is not in your cart."
   }
   cart = myCart 
-  return myCart
+  return cart
 }
 
 function placeOrder(cardNumber) {
