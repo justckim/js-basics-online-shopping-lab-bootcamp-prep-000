@@ -63,7 +63,7 @@ function removeFromCart(item) {
   
   for (var i = 0; i < myCart.length; i++) {
     if (myCart[i].itemName === item) {
-      
+      myCart = [...myCart.slice(0, i)...myCart.slice(i+1, myCart.length)]
     }
     
   }
